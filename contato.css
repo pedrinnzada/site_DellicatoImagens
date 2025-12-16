@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 70px;
+    background: #fff;  /* ESSENCIAL PRA SOMBRA APARECER */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    position: relative;
+    z-index: 10;
+}
+
+
+header img {
+    height: 90px;
+    object-fit: contain;
+    margin: 0; /* importante pra sombra aparecer certinho! */
+}
+
+.menu, .menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* menu principal horizontal */
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+/* itens do menu */
+.menu > li {
+  position: relative;  /* para posicionar o submenu em relação a ele */
+}
+
+/* links do menu */
+.menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+  display: block;
+}
+
+/* seta automática depois dos links que tiverem submenu */
+.menu > li.dropdown > a::after {
+  content: " ▼";  /* Unicode da setinha pra baixo */
+  font-size: 0.8em;
+  margin-left: 5px;
+}
+
+/* submenu escondido por padrão */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;  /* logo abaixo do item pai */
+  left: 0;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  min-width: 250px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  z-index: 1000;
+  border-radius: 18px;
+}
+
+/* itens do submenu */
+.submenu li a {
+  padding: 8px 12px;
+  color: #333;
+}
+
+/* mostra o submenu quando o mouse está sobre o item pai */
+.dropdown:hover .submenu {
+  display: block;
+}
+
+/* opcional: efeito visual ao passar o mouse nos links */
+.menu a:hover, .submenu li a:hover {
+  background: #96caff;
+  border-radius: 15px;
+}
+
+main img {
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+}
+
+.fundo{
+    background-color: #087ce9;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 50px;
+}
+.descricao{
+    text-align: center;
+    margin: auto;
+}
+
+.descricao h2{
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.descricao p{
+    margin: auto;
+    max-width: 700px;
+    font-size: 28px;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 40px;
+}
+
+
+.footer {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    background-color: #05294b;
+    color: #f3f3f3;
+    padding: 50px 60px;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* ===== LADO ESQUERDO - IMAGEM ===== */
+.footer-left {
+  flex: 1; /* ocupa metade */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-left img {
+  width: 250px;
+  border-radius: 260px;
+  object-fit: cover;
+  
+}
+
+/* ===== LADO DIREITO - CONTATOS ===== */
+.footer-right {
+  flex: 1;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.footer-right h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer-right p {
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+/* ===== CONTATO ===== */
+.contato {
+  margin: 20px 0;
+  line-height: 1.8;
+}
+
+/* ===== REDES SOCIAIS ===== */
+
+/* ===== DIREITOS AUTORAIS ===== */
+.copy {
+  font-size: 0.85rem;
+  color: #747474;
+  margin-top: 25px;
+}
+
+.divisao{
+    background-color: #7494ec;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+ 
+}
+
+.formulario {
+    background: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.container-form {
+    width: 50%;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    color: white;
+    width: 150px;
+    padding: 12px;
+    background: #4ea7ff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #0a5dac;
+}
+
+
+
+.menu-toggle {
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* ----- RESPONSIVIDADE DOS DEPOIMENTOS ----- */
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px 30px;
+    }
+
+    header img{
+        height: 80px;
+    }
+    main img{
+        height: 350px;
+    }
+
+    .fundo{
+        padding: 30px;
+    }
+    
+    .descricao h2{
+        font-size: 30px;
+    }
+
+    .descricao p{
+        font-size: 22px;
+    }
+
+    .formulario {
+        padding: 20px 0;
+    }
+
+    .container-form {
+        width: 90%;
+    }
+    
+    .container-form button{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .quemsomos{
+        flex-direction: column;
+    }
+    .quemsomos img{
+        width: 100%;
+        height: 300px;
+    }
+
+    .quemsomos .texto h2{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .quemsomos .texto{
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .btn{
+        margin-top: 30px;
+        width: 50%;
+        background-color: rgb(206, 149, 27);
+    }
+
+    .galeria a{
+        margin-bottom: 10px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #fff;
+        width: 60%;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        border-radius: 0 0 10px 10px;
+        z-index: 999;
+    }
+
+    .menu li {
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .menu li a {
+        padding: 12px;
+    }
+
+    /* Submenu dentro do mobile */
+    .submenu {
+        position: relative;
+        border: none;
+        box-shadow: none;
+        background: #f7f7f7;
+    }
+
+    .dropdown:hover .submenu {
+        display: none; /* DESATIVA o hover no mobile */
+    }
+
+    /* Submenu abre no clique */
+    .dropdown.open .submenu {
+        display: block;
+    }
+    /* Container geral dos depoimentos */
+#depoimentos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+/* Cada card */
+.depoimento {
+    width: 300px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    /* Isso força o nome ficar SEMPRE no final */
+    gap: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Estrelas no topo */
+.depoimento .estrelas {
+    font-size: 22px;
+    color: #f1c40f;
+    text-align: center;
+}
+
+/* Texto do depoimento */
+.depoimento .texto {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.4;
+    text-align: center;
+    flex-grow: 1; 
+    /* Isso faz o texto ocupar o espaço e não empurrar o nome */
+}
+
+/* Nome no rodapé do card */
+.depoimento .nome {
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.infos{
+    flex-direction: column;
+    align-items: center;
+}
+
+.social{
+    flex-direction: column;
+}
+
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .footer-left img {
+        width: 140px;
+    }
+
+    .footer-right h2 {
+        font-size: 20px;
+    }
+
+    .footer-right p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Móveis Planejados</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="logo">
+
+    <!-- BOTÃO MENU HAMBÚRGUER -->
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <nav>
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobrenos.html">Dellicato Imagens</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- FOTO INICIAL REDUZIDA -->
+    <section class="foto-topo">
+        <img src="bannerteste.png" alt="">
+    </section>
+
+    <section class="descricao">
+        <h2>Dellicato Imagens - MG</h2>
+        <p>
+            Soluções em melhoria de imagem com alto padrão visual e acabamento profissional. Entre em contato e eleve sua marca.
+        </p>
+    </section>
+
+    <section class="btn">
+        <a href="https://wa.me/5531992546664" onclick="irWhats()" target="_blank">Fale Conosco</a>
+    </section>
+
+
+    <section class="descricao">
+        <h2>Nossos Trabalhos</h2>
+        <p>
+            Design com estratégia, criado para fortalecer sua identidade visual e transmitir profissionalismo em cada detalhe.
+        </p>
+    </section>
+    <!-- FOTOS PRODUTOS -->
+    <section class="fotos">
+        <div class="galeria">
+            <div class="box-ad">
+                <img src="antes1.png" alt="Foto 1" onclick="abrirModal(this)">
+                <p>ANTES</p>
+            </div>
+        </div>
+
+        <div class="galeria">
+            <div class="box-ad">
+                <img src="depois1.png" alt="Foto 2" onclick="abrirModal(this)">
+                <p>DEPOIS</p>
+            </div>
+        </div>
+
+        <div class="galeria">
+            <div class="box-ad">
+                <img src="antes2.png" alt="Foto 3" onclick="abrirModal(this)">
+                <p>ANTES</p>
+            </div>
+        </div>
+
+        <div class="galeria">
+            <div class="box-ad">
+                <img src="depois2.png" alt="Foto 4" onclick="abrirModal(this)">
+                <p>DEPOIS</p>
+            </div>
+        </div>
+
+        <div class="galeria">
+            <div class="box-ad">
+                <img src="antes3.png" alt="Foto 5" onclick="abrirModal(this)">
+                <p>ANTES</p>
+            </div>
+        </div>
+
+        <div class="galeria">
+            <div class="box-ad">
+                <img src="depois3.png" alt="Foto 6" onclick="abrirModal(this)">
+                <p>DEPOIS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- REMOVIDO: QUEM SOMOS -->
+
+    <section class="descricao">
+        <h2>Por que contratar a Dellicato Imagens?</h2>
+        <p>Não é só deixar bonito. A gente melhora sua imagem pra gerar impacto, credibilidade e reconhecimento.</p>
+    </section>
+
+    <!-- CERTIFICAÇÕES EM 1 COLUNA -->
+    <section class="infos">
+        <div class="box">
+            <img src="okk.png" alt="">
+            <h3>Experiência</h3>
+            <p>Mais de 5 anos criando e aprimorando imagens impactantes.</p>
+        </div>
+
+        <div class="box">
+            <img src="okk.png" alt="">
+            <h3>Sustentabilidade</h3>
+            <p>Imagens alinhadas à personalidade e objetivos da sua marca.</p>
+        </div>
+
+        <div class="box">
+            <img src="okk.png" alt="">
+            <h3>Personalização</h3>
+            <p>Projetos únicos, feitos sob medida para você.</p>
+        </div>
+
+        <div class="box">
+            <img src="okk.png" alt="">
+            <h3>Inovação</h3>
+            <p>Design moderno, atual e focado em resultados reais.</p>
+        </div>
+    </section>
+
+    <section class="social">
+        <a href="https://www.instagram.com/dellicatoimagens/" target="_blank" class="social-item">
+            <i class="fa-brands fa-instagram"></i>
+            <p>Confira nosso Instagram</p>
+        </a>
+
+        <a href="https://wa.me/5531992546664" class="social-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <p>WhatsApp da empresa</p>
+        </a>
+    </section>
+
+    <!-- NOVO CARROSSEL 1 POR VEZ -->
+    <section class="depoimentos">
+        <h2>O que dizem nossos clientes</h2>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide card">
+                    <div class="stars">★★★★★</div>
+                    <p>Serviço impecável! O atendimento foi rápido, atencioso e o resultado final superou todas as minhas expectativas. Recomendo de olhos fechados!</p>
+                    <h4>Ricardo</h4>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="stars">★★★★★</div>
+                    <p>Fiquei muito satisfeito com a qualidade. O trabalho foi feito com cuidado e explicação, o acabamento ficou excelente. Certamente voltarei a contratar.</p>
+                    <h4>Emanuela</h4>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="stars">★★★★★</div>
+                    <p>Ótimo custo-benefício. Atendimento excelente e resultado final muito acima da média. Indico para qualquer pessoa que busque qualidade. Ótimo trabalho.</p>
+                    <h4>Pedro</h4>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="stars">★★★★★</div>
+                    <p>Equipe muito responsável e dedicada. O projeto ficou exatamente como eu imaginava, e ainda fui surpreendido por detalhes extras. Nota 10!</p>
+                    <h4>Eduarda</h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="planos">
+    <h2>Pacotes de Fotos</h2>
+
+    <div class="cards-planos">
+
+        <div class="plano">
+    <span class="desconto">25% OFF</span>
+    <span class="tag">BÁSICO</span>
+
+    <h3>5 Fotos</h3>
+
+    <p class="preco-antigo">R$ 80</p>
+    <p class="preco">R$ 60</p>
+
+    <ul class="beneficios">
+        <li>✔ Melhoria profissional</li>
+        <li>✔ Ajuste de cores</li>
+        <li>✔ Mais nitidez</li>
+        <li>✔ Entrega rápida</li>
+    </ul>
+
+    <a href="https://wa.me/5531992546664?text=Olá,%20gostaria%20de%20contratar%20o%20pacote%20de%205%20fotos%20por%20R$60,%20com%2025%%20de%20desconto.%20Aguardo%20mais%20informações."
+       target="_blank" class="btn-plano">
+        Escolher plano
+    </a>
+</div>
+
+
+        <div class="plano destaque">
+    <span class="desconto">25% OFF</span>
+    <span class="tag">MAIS POPULAR</span>
+
+    <h3>10 Fotos</h3>
+
+    <p class="preco-antigo">R$ 140</p>
+    <p class="preco">R$ 105</p>
+
+    <ul class="beneficios">
+        <li>✔ Tudo do plano básico</li>
+        <li>✔ Melhor equilíbrio de luz</li>
+        <li>✔ Imagens mais chamativas</li>
+        <li>✔ Ideal para redes sociais</li>
+    </ul>
+
+    <a href="https://wa.me/5531992546664?text=Olá,%20gostaria%20de%20contratar%20o%20pacote%20de%2010%20fotos%20por%20R$105,%20com%2025%%20de%20desconto.%20Aguardo%20mais%20informações."
+       target="_blank" class="btn-plano">
+        Escolher plano
+    </a>
+</div>
+
+
+        <div class="plano">
+    <span class="desconto">25% OFF</span>
+    <span class="tag">AVANÇADO</span>
+
+    <h3>15 Fotos</h3>
+
+    <p class="preco-antigo">R$ 200</p>
+    <p class="preco">R$ 150</p>
+
+    <ul class="beneficios">
+        <li>✔ Padronização visual</li>
+        <li>✔ Mais impacto comercial</li>
+        <li>✔ Destaque profissional</li>
+        <li>✔ Ideal para catálogos</li>
+    </ul>
+
+    <a href="https://wa.me/5531992546664?text=Olá,%20gostaria%20de%20contratar%20o%20pacote%20de%2015%20fotos%20por%20R$150,%20com%2025%%20de%20desconto.%20Aguardo%20mais%20informações."
+       target="_blank" class="btn-plano">
+        Escolher plano
+    </a>
+</div>
+
+
+        <div class="plano">
+    <span class="desconto">20% OFF</span>
+    <span class="tag">PRO</span>
+
+    <h3>20 Fotos</h3>
+
+    <p class="preco-antigo">R$ 250</p>
+    <p class="preco">R$ 200</p>
+
+    <ul class="beneficios">
+        <li>✔ Qualidade máxima</li>
+        <li>✔ Imagens de alto impacto</li>
+        <li>✔ Perfeito para anúncios</li>
+        <li>✔ Marca mais valorizada</li>
+    </ul>
+
+    <a href="https://wa.me/5531992546664?text=Olá,%20gostaria%20de%20contratar%20o%20pacote%20de%2020%20fotos%20por%20R$200,%20com%2020%%20de%20desconto.%20Aguardo%20mais%20informações."
+       target="_blank" class="btn-plano">
+        Escolher plano
+    </a>
+</div>
+
+
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-left">
+        <img src="logo.png" alt="">
+    </div>
+
+    <div class="footer-right">
+        <h2>Dellicato Imagens</h2>
+        <p>Imagem com propósito, não só estética</p>
+
+        <div class="contato">
+            <p><i class="fa-solid fa-phone"></i> (31) 99254-6664</p>
+            <p><i class="fa-solid fa-envelope"></i> dellicatoimagens@gmail.com</p>
+        </div>
+
+        <p class="copy">&copy; 2025 - Desenvolvido por Pedro Silva</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+<div id="modalImagem" class="modal">
+    <span class="fechar" onclick="fecharModal()">&times;</span>
+    <img class="modal-conteudo" id="imgModal">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moveis Planejados</title>
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="logo">
+         <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <nav>
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobrenos.html">Dellicato Imagens</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    </header>
+
+    <main>
+        
+        <section class="descricao">
+            <div class="fundo">
+                <h2>
+                    Fale Conosco
+                </h2>
+            </div>
+            <p>
+                Preencha seus dados e em breve entraremos em contato. Será um prazer ajudar.
+            </p>
+        </section>
+        
+        <section class="formulario">
+            <div class="container-form">
+                <form onsubmit="enviarWhats(event)">
+            
+                    <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                    
+                    <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
+
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Observação" required></textarea>
+
+                    <button type="submit">Enviar Contato</button>
+                </form>
+            </div>
+        </section>
+        
+       
+    
+    </main>
+
+<footer class="footer">
+    <div class="footer-left">
+        <img src="logo.png" alt="">
+    </div>
+
+    <div class="footer-right">
+        <h2>Dellicato Imagens</h2>
+        <p>Imagem com propósito, não só estética</p>
+
+        <div class="contato">
+            <p><i class="fa-solid fa-phone"></i> (31) 99254-6664</p>
+            <p><i class="fa-solid fa-envelope"></i> dellicatoimagens@gmail.com</p>
+        </div>
+
+        <p class="copy">&copy; 2025 - Desenvolvido por Pedro Silva</p>
+    </div>
+</footer>
+   
+<script src="script.js"></script>
+</body>
+
+</html>
